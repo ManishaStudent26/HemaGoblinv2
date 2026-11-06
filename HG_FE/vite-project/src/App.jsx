@@ -3,11 +3,11 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-import ThemeSignInPage from './pages/login.jsx'
+import TestSignInPage from './pages/login.jsx'
 
 
 function App() {
-  return(<ThemeSignInPage/>)
+  return(<TestSignInPage/>)
   /*const [count, setCount] = useState(0)
 
   return (
