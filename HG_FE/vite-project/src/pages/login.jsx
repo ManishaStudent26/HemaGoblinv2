@@ -40,6 +40,9 @@ export default function TestSignInPage() {
           },
         }}
       />
+      <h6>Sign up instead</h6>
     </AppProvider>
+
+    
   );
 }
