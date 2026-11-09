@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom/client';
+import { StyledEngineProvider } from '@mui/material/styles';
+import TopBar from './assets/components/TopBar.jsx';
 import './index.css'
 import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+ReactDOM.createRoot(document.querySelector('#root')).render(
+  <React.StrictMode>
+    <StyledEngineProvider injectFirst>
+    <TopBar/>
+    </StyledEngineProvider>
+    <App/>
+  </React.StrictMode>,
 )
