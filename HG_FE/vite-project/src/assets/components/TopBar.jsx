@@ -10,7 +10,7 @@ export default function TopBar(){
     >
         <Container maxWidth="xl">
             <Toolbar disableGutters>
-                <WaterDropIcon sx={{display:{}xs:'none', md:'flex}, mr:1'}}/>
+                <WaterDropIcon sx={{display:{xs:'none', md:'flex}, mr:1'}}}/>
                 <Typography
             variant="h6"
             noWrap
@@ -26,7 +26,7 @@ export default function TopBar(){
               textDecoration: 'none',
             }}
           >
-          PIG
+          HemaGoblin
           </Typography>
             </Toolbar>
 
