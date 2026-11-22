@@ -82,7 +82,8 @@ return(
         </form>
         </DialogContent>
         <DialogActions>
-        <Button type="submit" form ="register-form"></Button>
+        <Button type="submit" form ="register-form">Submit</Button>
+        <Button type="cancel" onClick={handleClose}>Cancel</Button>
         </DialogActions>
         </Dialog>
 
