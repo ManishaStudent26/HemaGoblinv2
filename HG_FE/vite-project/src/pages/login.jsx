@@ -2,11 +2,9 @@ import * as React from 'react';
 import { AppProvider } from '@toolpad/core/AppProvider';
 import { SignInPage } from '@toolpad/core/SignInPage';
 import { useTheme } from '@mui/material/styles';
-import RegisterForm from './register';
+import RegisterForm from './register.jsx';
 
 const providers = [
-  { id: 'apple', name: 'Apple' },
-  { id: 'google', name: 'Google' },
   { id: 'credentials', name: 'Email and Password' },
 ];
 
