@@ -41,7 +41,7 @@ export default function TestSignInPage() {
           },
         }}
       />
-      <RegisterForm></RegisterForm>
+      <RegisterForm/>
     </AppProvider>
 
     

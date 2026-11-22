@@ -12,6 +12,9 @@ export default function RegisterForm(){
     const handleClickOpen =()=>{
 setOpen(false);
     };
+    const handleClose=()=> {
+        setOpen(false);
+    }
 
     const handleSubmit= (event)=> {
         event.preventDefault();
