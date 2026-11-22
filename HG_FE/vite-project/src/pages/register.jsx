@@ -31,9 +31,10 @@ return(
         <Button onClick={handleClickOpen}>
             Register instead
         </Button>
+        <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Register</DialogTitle>
         <DialogContent>
-        <form onSubmit={handleSubmit} id="register-form"></form>
+        <form onSubmit={handleSubmit} id="register-form">
         <TextField
         autoFocus
         required
@@ -45,6 +46,45 @@ return(
         fullWidth
         variant="standard"
         />
+        <TextField
+        autoFocus
+        required
+        margin="dense"
+        id="password"
+        name="password"
+        label="Password"
+        type="password"
+        fullWidth
+        variant="standard"
+        />
+        <TextField
+        autoFocus
+        required
+        margin="dense"
+        id="firstname"
+        name="firstname"
+        label="firstname"
+        type="text"
+        fullWidth
+        variant="standard"
+        />
+        <TextField
+        autoFocus
+        required
+        margin="dense"
+        id="lastname"
+        name="lastname"
+        label="lastname"
+        type="text"
+        fullWidth
+        variant="standard"
+        />
+        </form>
         </DialogContent>
+        <DialogActions>
+        <Button type="submit" form ="register-form"></Button>
+        </DialogActions>
+        </Dialog>
+
     </React.Fragment>
 )}
