@@ -19,16 +19,32 @@ setOpen(false);
         const formJson = Object.fromEntries(formData.entries());
         const email=formJson.email
         const password=formJson.password
+        const firstname=formJson.firstname
+        const lastname=formJson.lastname
         console.log(email)
-        handleClose();
+        console.log(firstname)
+        handleClose(lastname);
 };
 
 return(
     <React.Fragment>
         <Button onClick={handleClickOpen}>
-            Register
+            Register instead
         </Button>
         <DialogTitle>Register</DialogTitle>
-        
+        <DialogContent>
+        <form onSubmit={handleSubmit} id="register-form"></form>
+        <TextField
+        autoFocus
+        required
+        margin="dense"
+        id="email"
+        name="email"
+        label="Email"
+        type="email"
+        fullWidth
+        variant="standard"
+        />
+        </DialogContent>
     </React.Fragment>
 )}
