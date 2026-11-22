@@ -63,7 +63,7 @@ return(
         margin="dense"
         id="firstname"
         name="firstname"
-        label="firstname"
+        label="First Name"
         type="text"
         fullWidth
         variant="standard"
@@ -74,7 +74,7 @@ return(
         margin="dense"
         id="lastname"
         name="lastname"
-        label="lastname"
+        label="Last Name"
         type="text"
         fullWidth
         variant="standard"
