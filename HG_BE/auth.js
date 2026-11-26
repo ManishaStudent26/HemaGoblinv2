@@ -56,3 +56,8 @@ export const firebaseSignOut = async () => {
         }
     }
 };
+
+// Auth state observer
+export const onAuthStateChanged = (callback) => {
+  return firebaseAuth.onAuthStateChanged(callback);
+};
