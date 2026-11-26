@@ -3,6 +3,7 @@ import { AppProvider } from '@toolpad/core/AppProvider';
 import { SignInPage } from '@toolpad/core/SignInPage';
 import { useTheme } from '@mui/material/styles';
 import RegisterForm from './register.jsx';
+import { signInWithCredentials, onAuthStateChanged } from '../../../../HG_BE/auth.js';
 
 const providers = [
   { id: 'credentials', name: 'Email and Password' },
