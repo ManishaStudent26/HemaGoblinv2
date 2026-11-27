@@ -1,8 +1,6 @@
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword
-} from 'firebase/auth';
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword} from 'firebase/auth';
 import Firebase from firebase.js
+import NewUser from './routes/userRoutes';
 
 
 //Login
@@ -44,10 +42,12 @@ export const firebaseSignOut = async () => {
 
 //Sign up
 
-    export const firebaseSignUp =async (email, password)=>{ try
+  export const firebaseSignUp =async (email, password, firstname, lastname)=>{ try
          {
-  await createUserWithEmailAndPassword(auth, email, password);
+  const newUser=await createUserWithEmailAndPassword(auth, email, password);
+  NewUser(newUser.uid, firstname, lastname)
   return {success: true}
+
     }
     catch(error){
         return{
