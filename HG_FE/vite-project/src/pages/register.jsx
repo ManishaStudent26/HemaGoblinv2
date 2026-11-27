@@ -6,8 +6,13 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
+
 export default function RegisterForm(){
     const[open, setOpen]= React.useState(false);
+    const[email, setEmail]= React.useState('');
+    const[password, setPassword]=React.useState('');
+    const[isRegistering, setIsRegistering]=React.useState(false)
+    const[errorMessage, setErrorMessage]=React.useState(false)
     const handleClickOpen =()=>{setOpen(true);};
     const handleClose=()=> {
         setOpen(false);
@@ -21,9 +26,12 @@ export default function RegisterForm(){
         const password=formJson.password
         const firstname=formJson.firstname
         const lastname=formJson.lastname
-        console.log(email)
-        console.log(firstname)
-        handleClose(lastname);
+        console.log(email),
+        console.log(firstname),
+        console.log(lastname)
+        doCreateUserWithEmailAndPassword(email,password)
+        
+        handleClose;
 };
 
 return(
