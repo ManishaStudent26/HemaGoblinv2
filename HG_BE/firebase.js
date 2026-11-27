@@ -1,5 +1,6 @@
 require('dotenv').config();
 import app from 'firebase/app';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_API_KEY,
@@ -14,4 +15,5 @@ class Firebase {
  app.initializeApp(firebaseConfig);
  }
 }
-export default Firebase
+const auth=getAuth(Firebase)
+export default {Firebase}
