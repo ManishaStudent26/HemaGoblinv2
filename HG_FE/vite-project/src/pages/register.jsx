@@ -5,6 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
+import { firebaseSignUp } from '../../../../HG_BE/auth';
 
 
 export default function RegisterForm(){
@@ -28,9 +29,8 @@ export default function RegisterForm(){
         const lastname=formJson.lastname
         console.log(email),
         console.log(firstname),
-        console.log(lastname)
-        doCreateUserWithEmailAndPassword(email,password)
-        
+        console.log(lastname),
+        firebaseSignUp(email, password, firstname, lastname)
         handleClose;
 };
 
