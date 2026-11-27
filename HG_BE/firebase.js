@@ -16,4 +16,4 @@ class Firebase {
  }
 }
 const auth=getAuth(Firebase)
-export default {Firebase}
+export default {Firebase, auth}
